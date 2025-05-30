@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instrumentos - Aguardando e Em Serviço</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Controle de Instrumentos</h1>
+  
+  <!-- Exibe o total geral dos produtos (aguardando e em-serviço) -->
+  <p id="total-produtos">Total produtos: 0</p>
+
+  <form id="instrumentForm">
+    <input type="text" id="instrumentName" placeholder="Nome do Instrumento" required />
+    <input type="text" id="clientName" placeholder="Nome do Cliente" required />
+    <input type="text" id="description" placeholder="Descrição do serviço" />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div class="container">
+    <div class="column" id="aguardando">
+      <h2>Aguardando <span id="count-aguardando">Total: 0</span></h2>
+      <div class="cards"></div>
+    </div>
+
+    <div class="column" id="em-servico">
+      <h2>Em Serviço <span id="count-em-servico">Total: 0</span></h2>
+      <div class="cards"></div>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="garantia.html">Ver em Garantia</a> |
+    <a href="crm.html">Ver CRM</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
