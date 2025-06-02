@@ -20,7 +20,7 @@ const counts = {
 let instruments = [];
 
 // Base da URL da API
-const API_BASE = "https://meu-backend.onrender.com";
+const API_BASE = "https://api.render.com/deploy/srv-d0sr9sk9c44c73ff47i0?key=2CdBhNc2rW0";
 
 // Função para buscar os instrumentos do backend
 async function fetchInstruments() {
